@@ -17,7 +17,7 @@ The objectives of this laboratory activity are to:
 ---
 
 ## II. Repository Contents
-* `ECE2112_PA1.ipynb`: Jupyter Notebook containing the executed Python code, function implementations, and test case outputs.
+* `Programming Assignment 1 (BENDICIO_2ECE-A).ipynb`: Jupyter Notebook containing the executed Python code, function implementations, and test case outputs.
 * `README.md`: Overview, objective, and detailed discussion of the programming problems.
 
 ---
