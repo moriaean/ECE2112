@@ -26,7 +26,7 @@ The objectives of this laboratory activity are to:
 
 ### Problem A: Word Rotation Problem (`rotate_word`)
 * **Objective:** Take a non-empty string and move its first character to the end while keeping the rest of the characters in order and preserving original capitalization.
-* **Implementation Strategy:** Utilized Python string slicing (`text[1:]`) to capture all characters from index 1 to the end, and string indexing (`text[0]`) to isolate the first character. Merged them using string concatenation (`text[1:] + text[0]`).
+* **Implementation Strategy:** Utilized Python string slicing (`text[1:len(text):1]`) to capture all characters from index 1 to the end, and string indexing (`text[0:1]`) to isolate the first character. Merged them using string concatenation (`text[1:len(text):1]+text[0:1]`).
 * **Example Output:** `rotate_word("python")` $\rightarrow$ `"ythonp"`
 
 ---
@@ -35,8 +35,8 @@ The objectives of this laboratory activity are to:
 * **Objective:** Combine a first name and last name into a single standardized username format (`firstname.lastname`) in lowercase with all internal spaces removed.
 * **Implementation Strategy:** 
   1. Applied the `.lower()` method to both input strings to ensure lowercase consistency.
-  2. Applied `.replace(" ", "")` to strip any existing whitespace within multi-word names.
-  3. Formatted the final output using string concatenation or f-strings joined by a period (`.`).
+  2. Applied `.replace(" ", "")` to strip any existing whitespace within multi-first names.
+  3. Formatted the final output using string concatenation joined by a period (`.`).
 * **Example Output:** `make_username("Ana Maria", "De Leon")` $\rightarrow$ `"anamaria.deleon"`
 
 ---
